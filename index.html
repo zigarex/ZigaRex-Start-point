@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ZIGA Portfolio</title>
+
+  <!-- JSON-LD for structured data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "Gmail Workflow Logger",
+  "author": {
+    "@type": "Person",
+    "name": "Mahus Ekene Enoch (Ziga)"
+  },
+  "description": "A Gmail-to-Google-Sheets automation that labels, logs, and classifies emails using JSON rules.",
+  "programmingLanguage": "JavaScript",
+  "runtimePlatform": "Google Apps Script",
+  "applicationCategory": "EmailAutomation",
+  "keywords": ["Gmail", "Apps Script", "Automation", "Ziga", "Workflow"]
+}
+</script>
+  <style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 6px;
+  cursor: zoom-in;
+}
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  align-items: center;
+  justify-content: center;
+}
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+}
+</style>
+</head>
+
+<body>
+
+  <h1>Mahus Ekene Enoch (ZIGA)</h1>
+  <p>Embedded • Automation • Software • Gmail Workflow Automation</p>
+
+  <h2>About Me</h2>
+  <p>
+    I am an automotive and embedded systems junior developer passionate about building
+    self-designed intelligent systems.
+  </p>
+
+  <ul>
+    <li><strong>Soak’s Sentinel</strong> — smart business monitoring system.</li>
+    <li>Automated car cover & wash system using AUTOSAR principles.</li>
+  </ul>
+
+  <h2>Ongoing Projects</h2>
+
+  <h3>Soak Sentinel (Concept Stage)</h3>
+  <p>
+    A Raspberry-Pi powered system for stock tracking, shop security,
+    bookkeeping, and real-time alerts.
+  </p>
+
+  <h3>Automated Car Wash & Body Cover System</h3>
+  <p>
+    An AUTOSAR-inspired automotive system for automatic car covering
+    and exterior washing using sensors, motors, and embedded control.
+  </p>
+
+  <h2>Gmail Workflow Automation</h2>
+  <p>
+    Built with Google Apps Script and modern JavaScript to log Gmail
+    messages into Google Sheets every 5 minutes using time-based triggers.
+  </p>
+
+<h3>Workflow Screenshots (Click to Zoom)</h3>
+
+<div class="gallery">
+  <img src="images/1.jpg" onclick="openImg(this)">
+  <img src="images/2.jpg" onclick="openImg(this)">
+  <img src="images/3.jpg" onclick="openImg(this)">
+  <img src="images/4.jpg" onclick="openImg(this)">
+  <img src="images/5.jpg" onclick="openImg(this)">
+  <img src="images/6.jpg" onclick="openImg(this)">
+  <img src="images/7.jpg" onclick="openImg(this)">
+  <img src="images/8.jpg" onclick="openImg(this)">
+  <img src="images/9.jpg" onclick="openImg(this)">
+  <img src="images/10.jpg" onclick="openImg(this)">
+  <img src="images/11.jpg" onclick="openImg(this)">
+  <img src="images/12.jpg" onclick="openImg(this)">
+  <img src="images/13.jpg" onclick="openImg(this)">
+  <img src="images/14.jpg" onclick="openImg(this)">
+  <img src="images/15.jpg" onclick="openImg(this)">
+  <img src="images/16.jpg" onclick="openImg(this)">
+</div>
+
+<div id="imgModal" class="modal" onclick="closeImg()">
+  <img id="modalImg">
+</div>
+  <footer>
+    <p>© 2025 ZIGA — All Rights Reserved</p>
+  </footer>
+
+<script>
+function openImg(img) {
+  document.getElementById("modalImg").src = img.src;
+  document.getElementById("imgModal").style.display = "flex";
+}
+function closeImg() {
+  document.getElementById("imgModal").style.display = "none";
+}
+</script>
+</body>
+</html>
