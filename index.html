@@ -4,112 +4,284 @@
   <meta charset="UTF-8">
   <title>ZIGA Portfolio</title>
 
-  <!-- JSON-LD for structured data -->
+  <!-- PROFESSIONAL CAREER JSON-LD -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareSourceCode",
-  "name": "Gmail Workflow Logger",
-  "author": {
-    "@type": "Person",
-    "name": "Mahus Ekene Enoch (Ziga)"
-  },
-  "description": "A Gmail-to-Google-Sheets automation that labels, logs, and classifies emails using JSON rules.",
-  "programmingLanguage": "JavaScript",
-  "runtimePlatform": "Google Apps Script",
-  "applicationCategory": "EmailAutomation",
-  "keywords": ["Gmail", "Apps Script", "Automation", "Ziga", "Workflow"]
+  "@type": "Person",
+  "name": "Mahus Ekene Enoch",
+  "alternateName": "Ziga",
+  "jobTitle": "Automation Engineer & Technical Documentation Specialist",
+  "description": "Automation engineer and technical writer specializing in Google Apps Script backends, workflow automation, embedded systems, and system documentation.",
+  "url": "https://zigarex.github.io/ZigaRex-Start-point/",
+  "knowsAbout": [
+    "Google Apps Script",
+    "Workflow Automation",
+    "Technical Documentation",
+    "Embedded Systems",
+    "Raspberry Pi",
+    "AUTOSAR",
+    "JavaScript",
+    "Google Sheets API"
+  ],
+  "sameAs": [
+    "https://github.com/zigarex"
+  ]
 }
 </script>
+
   <style>
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 12px;
-}
-.gallery img {
-  width: 100%;
-  border-radius: 6px;
-  cursor: zoom-in;
-}
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.85);
-  align-items: center;
-  justify-content: center;
-}
-.modal img {
-  max-width: 90%;
-  max-height: 90%;
-}
-</style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 960px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      margin-bottom: 40px;
+    }
+
+    .hero h1 {
+      margin-bottom: 5px;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      background: #fafafa;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+    }
+
+    .project-links a {
+      margin-right: 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 6px;
+      cursor: zoom-in;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.85);
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #777;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 
 <body>
 
-  <h1>Mahus Ekene Enoch (ZIGA)</h1>
-  <p>Embedded • Automation • Software • Gmail Workflow Automation</p>
+<!-- NAVIGATION -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
 
+<!-- HERO -->
+<section class="hero">
+  <h1>Mahus Ekene Enoch (ZIGA)</h1>
+  <p>Automation Engineer • Technical Writer • Embedded Systems Builder</p>
+  <p>I design automation backends, document real systems, and build intelligent workflows using Google Apps Script and embedded platforms.</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
   <h2>About Me</h2>
   <p>
-    I am an automotive and embedded systems junior developer passionate about building
-    self-designed intelligent systems.
+    I am an automation-focused developer and technical documentation specialist passionate about building and explaining intelligent systems.
+    My work combines backend automation, embedded systems, and structured technical writing — turning working code into reusable knowledge.
   </p>
 
   <ul>
-    <li><strong>Soak’s Sentinel</strong> — smart business monitoring system.</li>
-    <li>Automated car cover & wash system using AUTOSAR principles.</li>
+    <li><strong>Soak’s Sentinel</strong> — battery-powered business monitoring and security system.</li>
+    <li><strong>Automated Car Wash & Cover System</strong> — AUTOSAR-inspired embedded automotive project.</li>
+    <li><strong>Workflow Automation Systems</strong> — Gmail, Sheets, and form-driven automation pipelines.</li>
   </ul>
+</section>
 
-  <h2>Ongoing Projects</h2>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Featured Projects</h2>
 
-  <h3>Soak Sentinel (Concept Stage)</h3>
-  <p>
-    A Raspberry-Pi powered system for stock tracking, shop security,
-    bookkeeping, and real-time alerts.
-  </p>
+  <div class="projects-grid">
 
-  <h3>Automated Car Wash & Body Cover System</h3>
-  <p>
-    An AUTOSAR-inspired automotive system for automatic car covering
-    and exterior washing using sensors, motors, and embedded control.
-  </p>
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+      <img src="images/1.jpg" alt="Gmail Workflow Logger Dashboard">
+      <h3>Gmail Workflow Automation Logger</h3>
+      <p>
+        A Google Apps Script backend that monitors Gmail, classifies messages using JSON rules,
+        and logs structured email data into Google Sheets using time-based triggers.
+      </p>
+      <p><strong>Tech:</strong> Google Apps Script, JavaScript, Gmail API, Google Sheets API</p>
+      <div class="project-links">
+        <a href="https://github.com/zigarex" target="_blank">View Code</a>
+      </div>
 
-  <h2>Gmail Workflow Automation</h2>
-  <p>
-    Built with Google Apps Script and modern JavaScript to log Gmail
-    messages into Google Sheets every 5 minutes using time-based triggers.
-  </p>
+      <div class="gallery">
+        <img src="images/1.jpg" onclick="openImg(this)">
+        <img src="images/2.jpg" onclick="openImg(this)">
+        <img src="images/3.jpg" onclick="openImg(this)">
+        <img src="images/4.jpg" onclick="openImg(this)">
+      </div>
+    </div>
 
-<h3>Workflow Screenshots (Click to Zoom)</h3>
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+      <img src="images/5.jpg" alt="Vehicle Gate Logging System">
+      <h3>Gate Vehicle Logging System</h3>
+      <p>
+        A web-form + Apps Script backend that captures vehicle entry data and logs it in real-time
+        into Google Sheets for security monitoring and reporting.
+      </p>
+      <p><strong>Tech:</strong> Google Apps Script, HTML, JavaScript, Google Sheets</p>
+      <div class="project-links">
+        <a href="https://github.com/zigarex" target="_blank">View Code</a>
+      </div>
 
-<div class="gallery">
-  <img src="images/1.jpg" onclick="openImg(this)">
-  <img src="images/2.jpg" onclick="openImg(this)">
-  <img src="images/3.jpg" onclick="openImg(this)">
-  <img src="images/4.jpg" onclick="openImg(this)">
-  <img src="images/5.jpg" onclick="openImg(this)">
-  <img src="images/6.jpg" onclick="openImg(this)">
-  <img src="images/7.jpg" onclick="openImg(this)">
-  <img src="images/8.jpg" onclick="openImg(this)">
-  <img src="images/9.jpg" onclick="openImg(this)">
-  <img src="images/10.jpg" onclick="openImg(this)">
-  <img src="images/11.jpg" onclick="openImg(this)">
-  <img src="images/12.jpg" onclick="openImg(this)">
-  <img src="images/13.jpg" onclick="openImg(this)">
-  <img src="images/14.jpg" onclick="openImg(this)">
-  <img src="images/15.jpg" onclick="openImg(this)">
-  <img src="images/16.jpg" onclick="openImg(this)">
-</div>
+      <div class="gallery">
+        <img src="images/5.jpg" onclick="openImg(this)">
+        <img src="images/6.jpg" onclick="openImg(this)">
+        <img src="images/7.jpg" onclick="openImg(this)">
+      </div>
+    </div>
 
+    <!-- PROJECT 3 -->
+    <div class="project-card">
+      <img src="images/8.jpg" alt="Client Intake Automation">
+      <h3>Client Intake Form Automation</h3>
+      <p>
+        A form-driven automation system that captures client onboarding data,
+        validates submissions, and stores structured records into Google Sheets automatically.
+      </p>
+      <p><strong>Tech:</strong> Google Apps Script, HTML Forms, JavaScript, Google Sheets</p>
+      <div class="project-links">
+        <a href="https://github.com/zigarex" target="_blank">View Code</a>
+      </div>
+
+      <div class="gallery">
+        <img src="images/8.jpg" onclick="openImg(this)">
+        <img src="images/9.jpg" onclick="openImg(this)">
+        <img src="images/10.jpg" onclick="openImg(this)">
+      </div>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="project-card">
+      <img src="images/11.jpg" alt="Soak’s Sentinel Backend">
+      <h3>Soak’s Sentinel Backend (Concept Stage)</h3>
+      <p>
+        A battery-powered Raspberry Pi system concept for business monitoring,
+        security logging, power optimization, and real-time alert automation.
+      </p>
+      <p><strong>Tech:</strong> Raspberry Pi, Python, Embedded Systems, IoT</p>
+      <div class="project-links">
+        <a href="https://github.com/zigarex" target="_blank">View Repo</a>
+      </div>
+    </div>
+
+    <!-- PROJECT 5 -->
+    <div class="project-card">
+      <img src="images/12.jpg" alt="Automated Car Wash System">
+      <h3>Automated Car Wash & Cover System</h3>
+      <p>
+        An AUTOSAR-inspired embedded system for automatic vehicle covering and
+        exterior washing using sensors, motors, and control logic.
+      </p>
+      <p><strong>Tech:</strong> Embedded C, Sensors, Motors, AUTOSAR Concepts</p>
+      <div class="project-links">
+        <a href="https://github.com/zigarex" target="_blank">View Repo</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: yourname@example.com</p>
+  <p>GitHub: <a href="https://github.com/zigarex" target="_blank">github.com/zigarex</a></p>
+</section>
+
+<!-- MODAL -->
 <div id="imgModal" class="modal" onclick="closeImg()">
   <img id="modalImg">
 </div>
-  <footer>
-    <p>© 2025 ZIGA — All Rights Reserved</p>
-  </footer>
+
+<footer>
+  <p>© 2026 ZIGA — All Rights Reserved</p>
+</footer>
 
 <script>
 function openImg(img) {
@@ -120,5 +292,6 @@ function closeImg() {
   document.getElementById("imgModal").style.display = "none";
 }
 </script>
+
 </body>
 </html>
